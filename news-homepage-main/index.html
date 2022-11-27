@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png" />
+
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Frontend Mentor | News homepage</title>
+  <body>
+    <section class="body">
+      <!-- Header -->
+      <section class="header">
+        <div class="header-logo">
+          <h1>W.</h1>
+        </div>
+        <div class="header-menu-options">
+          <img src="assets/images/icon-menu.svg" id="menuicon" alt="menulogo" onclick="openMenu()">
+          <ul>
+            <li>Home</li>
+            <li>New</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
+        </div>
+      </section>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-part1">
+          <div class="hero-part1-banner">
+            <img src="assets/images/image-web-3-desktop.jpg" />
+          </div>
+          <div class="hero-part1-content">
+            <div class="hero-part1-content1">
+              <h1>The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="hero-part1-content2">
+              <p>
+                We drive into the next evolution of the web that claims to put
+                power of the platforms back into the hands of the people. But
+                its really fullfilling its promise?
+              </p>
+              <button>READ MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="hero-part2">
+          <h4>New</h4>
+          <div class="hero-part2-content hero-part2-content-border">
+            <h6>Hydrogen VS Electric Cars</h6>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="hero-part2-content hero-part2-content-border">
+            <h6>The Downsides of AI Artistry</h6>
+            <p>What are the possible adverse effects of on-demand AI image generation</p>
+          </div>
+          <div class="hero-part2-content">
+            <h6>Is VC Funding Drying Up</h6>
+            <p>Private fundong by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Grid -->
+      <section class="products">
+        <div class="product">
+          <div class="product-image">
+            <img src="assets/images/image-retro-pcs.jpg" alt="lap" />
+          </div>
+          <div class="product-conntent">
+            <h4>01</h4>
+            <h6>Reviving Retro PCs</h6>
+            <p>What happens when ols PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <img src="assets/images/image-top-laptops.jpg" alt="lap" />
+          </div>
+          <div class="product-conntent">
+            <h4>02</h4>
+            <h6>Top 10 Laptops of 2022</h6>
+            <p>Out best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <img src="assets/images/image-gaming-growth.jpg" alt="lap" />
+          </div>
+          <div class="product-conntent">
+            <h4>03</h4>
+            <h6>The Growth of Gaming</h6>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </section>
+      <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.linkedin.com/in/venkatesh-babu-22a24a197">Venkatesh Babu</a>.
+    </div>
+    </section>
+    <section id="background-layer">
+    </section>
+    <section id="menu-popup">
+      <div class="close" onclick="closeMenu()">
+        <img src="assets/images/icon-menu-close.svg" alt="close">
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+    </section>
+  </body>
+</html>
+<script>
+  function closeMenu() {
+  document.getElementById("menu-popup").style.display = "none";
+  document.getElementById("background-layer").style.display = "none";
+}
+function openMenu() {
+  document.getElementById("menu-popup").style.display = "block";
+  document.getElementById("background-layer").style.display = "block";
+}
+</script>
